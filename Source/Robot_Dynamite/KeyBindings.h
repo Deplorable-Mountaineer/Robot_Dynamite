@@ -7,7 +7,7 @@
 #include "Runtime/Engine/Classes/GameFramework/PlayerInput.h"
 #include "KeyBindings.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FBlueprintActionBinding
 {
 	GENERATED_BODY()

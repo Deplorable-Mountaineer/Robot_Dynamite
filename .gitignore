@@ -14,8 +14,15 @@
 **/*.xcodeproj
 **/*.xcworkspace
 **/*_BuiltData.uasset
+
+**/Content/Weapons
+**/Content/Sounds
+**/Content/Environment
+**/Content/Characters
+
 Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset
 src/floorTiles.xcf
 src/tilesBig.xcf
 src/glass.xcf
 src/tiles.xcf
+
