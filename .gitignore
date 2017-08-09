@@ -17,10 +17,9 @@
 **/Developers
 **/TestBuilds
 
-**/Content/Weapons
-**/Content/Sounds
-**/Content/Environment
-**/Content/Characters
+**/Weapons/T_Metal_Metal02_D.uasset
+**/Weapons/Rifle/T_MagGunT2_shade.uasset
+**/Weapons/Rifle/T_MagGunT1_shade.uasset
 
 
 Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset
