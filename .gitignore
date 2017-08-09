@@ -14,11 +14,14 @@
 **/*.xcodeproj
 **/*.xcworkspace
 **/*_BuiltData.uasset
+**/Developers
+**/TestBuilds
 
 **/Content/Weapons
 **/Content/Sounds
 **/Content/Environment
 **/Content/Characters
+
 
 Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset
 src/floorTiles.xcf
