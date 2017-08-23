@@ -36,3 +36,79 @@ In the case of a weapon, the item is depleted when the character “fires” the
 
 With power ups, you can stop using them (and use more than one at the same time).  This stops the depletion.  This contrasts with a weapon in which only one can be used at a time, and it is used by “firing” it.
 The Melee weapon is not replenished by a pickup.  Instead, it is replenished by “rest”--by one available hit every three seconds.
+
+
+## Sentry AI
+
+Initially, the sentry is in Home state.
+
+### Home
+
+Action: _Go Home_
+
+If out of ammo, transition to Regroup.
+If health is low, transition to Regroup.
+If shot at, transition to Dodge.
+If the player is detected, transition to Pursue.
+If near home location, transition to Seek
+
+### Seek
+
+Action: _Patrol or Wander_
+
+If out of ammo, transition to Regroup.
+If health is low, transition to Regroup.
+If shot at, transition to Dodge.
+If the player is detected, transition to Pursue.
+If too far from home, transition to Home.
+
+### Pursue
+
+Action: _Go to Player_
+
+If out of ammo, transition to Flee.
+If health is low, transition to Flee.
+If shot at, transition to Dodge.
+If disengaged from player, transition to Follow Suspected.
+If see player and in attack range, transition to Attack.
+
+### Follow Suspected
+
+Action: _Go to Last Known Location_
+
+If out of ammo, transition to Flee.
+If health is low, transition to Flee.
+If shot at, transition to Dodge.
+If player is detected, transition to Pursue.
+If suspected location reached, transition to Regroup.
+
+### Attack
+
+Action: _Face Player and Shoot_
+
+If shot at, transition to Dodge.
+If disengaged, transition to Follow Suspected.
+If out of attack range, transition to Pursue.
+If out of ammo, transition to Flee.
+If health is low, transition to Flee.
+
+### Dodge
+
+Action: _Dodge left or right or lunge forward_
+
+If out of ammo, transition to Flee.
+If health is low, transition to Flee.
+Otherwise, Transition to Follow Suspected.
+
+### Flee
+
+Action: _Go Away from Player_
+
+If shot at, transition to Dodge.
+If player not detected for some time, transition to Regroup
+
+### Regroup
+
+Action: _Go to Ammo or Health_
+If shot at, transition to Dodge.
+If have ammo and health, transition to Home
