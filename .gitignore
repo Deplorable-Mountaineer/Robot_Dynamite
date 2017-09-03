@@ -34,26 +34,18 @@
 **/Content/MixamoAnimPack
 **/Content/ParticleEffects
 
-**/Landscape/T_ScotsPine*
-**/Landscape/T_RiverPebbles*
-**/Landscape/T_MountainRock*
-**/Landscape/T_MacroVariation*
-**/Landscape/T_LavaFlow*
-**/Landscape/T_PlainsBoulder*
+**/Foliage
+**/Landscape/Rock
 **/Landscape/T_ground_Moss*
-**/Landscape/T_gravel*
-**/Landscape/T_Til*
-**/Landscape/T_Alpine*
-**/Landscape/ScotsPine*
-**/Landscape/D_Tree*
 **/Landscape/Hill*
 **/Landscape/T_Hill*
-**/Landscape/T_GDC*
-**/Landscape/T_Forest*
-**/Landscape/T_Dead*
-**/Landscape/T_Craghead*
-**/Landscape/T_Large*
-**/Landscape/T_Ground_Grass*
+**/Landscape/Grass
+**/Landscape/DirtMud
+
+**/Landscape/T_MacroVariation*
+**/Landscape/T_LavaFlow*
+**/Landscape/T_Tiling*
+
 
 **/Props/T_Vege*
 **/Props/T_Hill*
